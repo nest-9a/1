@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="mn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Бидний үзсэн хичээл</title>
+
+    <!-- Font Awesome CDN холбоос -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- Гадны CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="course-inner.css" />
+
+    <!-- JQuery CDN холбоос -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Навигацийн хэсэг -->
+    <nav>
+      <img src="img/favicon.ico" class="logo" alt="" />
+
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html" >Нүүр Хуудас</a></li>
+				<li><a href="about.html"  > Бүтээлийн танилцуулга</a></li>
+				<li><a href="course-inner.html" class="active">Бидний үзсэн хичээл</a></li>
+				<li><a href="contact.html">Холбоо барих</a></li>
+        </ul>
+
+        <img src="img/menu.png" id="menu-btn" alt="" />
+      </div>
+    </nav>
+   
+
+    <section id="about-home">
+      <h2>Хичээлээ үзээд чадвараа сайжруул</h2>
+    </section>
+   
+    <section id="course-inner">
+      <div class="overview">
+        <img class="course-img" src="img/c1.jpg" alt="" />
+
+        <div class="course-head">
+          <div class="c-name">
+            <h2>App inventor хичээлийн тухай</h2>
+
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <p>Тайлбар хэсэг</p>
+          </div>
+          <span>млй мой</span>
+        </div>
+
+        <h3>Багш</h3>
+        <div class="tutor">
+          <img src="img/c4.jpg" alt="" />
+          <div class="tutor-det">
+            <h5>Батмөнх</h5>
+            <p>IoT </p>
+          </div>
+        </div>
+
+        <hr />
+
+        <h3>Хичээлийн сэтгэгдэлүүд</h3>
+
+        <p>Гайхалтай хичээл</p>
+        <br />
+        <p>Гайхалтай хичээл</p>
+        <br />
+        <p>Гайхалтай хичээл</p>
+
+        <hr />
+
+        <h3>Та юу сурах вэ</h3>
+
+        <div class="learn">
+          <p><i class="far fa-check-circle"></i> Эдгээр зүйлсийг сурна.</p>
+          <p><i class="far fa-check-circle"></i> Эдгээр зүйлсийг сурна.</p>
+          <p><i class="far fa-check-circle"></i> Эдгээр зүйлсийг сурна.</p>
+          <p><i class="far fa-check-circle"></i> Эдгээр зүйлсийг сурна.</p>
+          <p><i class="far fa-check-circle"></i> Эдгээр зүйлсийг сурна.</p>
+          <p><i class="far fa-check-circle"></i> Эдгээр зүйлсийг сурна.</p>
+
+          <div class="enroll-btn">
+            <a href="#" class="blue">Хичээл үзэх</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="enroll">
+        <h3>Энэ бүтээлээр:</h3>
+
+        <p><i class="fa-solid fa-video"></i> Хичээлийн цаг дээрх</p>
+        <p><i class="fa-solid fa-newspaper"></i> бабаөаө</p>
+        <p><i class="fa-solid fa-download"></i> өброхөобхөб</p>
+        <p><i class="fa-solid fa-key"></i> абөабө</p>
+
+        <div class="enroll-btn">
+          <a href="#" class="blue">Хичээл үзэх</a>
+        </div>
+      </div>
+    </section>
+    <!-- Course body section starts -->
+
+   
+    <script>
+      // Show menu links on burger click
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      // Hide navbar on click function
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

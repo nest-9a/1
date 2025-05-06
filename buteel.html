@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="mn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Бидний бүтээл</title>
+
+    <!-- Font Awesome CDN холбоос -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- Гадны CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="buteel.css" />
+    <link rel="stylesheet" href="blog.css" />
+
+    <!-- JQuery CDN холбоос -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Навигацийн хэсэг -->
+    <nav>
+      <img src="img/favicon.ico" class="logo" alt="" />
+
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html" >Нүүр Хуудас</a></li>
+				<li><a href="buteel.html"class="active">Бүтээлийн танилцуулга</a></li>
+				<li><a href="course-inner.html">Хичээлийн тухай</a></li>
+				<li><a href="contact.html">Холбоо барих</a></li>
+        </ul>
+
+        <img src="img/menu.png" id="menu-btn" alt="" />
+      </div>
+    </nav>
+    
+    <section id="about-home">
+      <h2>Блог.</h2>
+    </section>
+    
+    <section id="blog-container">
+      <div class="blogs">
+        <div class="post">
+          <img src="img/b1.jpg" alt="" />
+          <h3>Вэб хөгжүүлэлтийг хамгийн хялбар аргаар сурах</h3>
+          <p>
+            Лорем ипсум dolor sit amet consectetur adipisicing, elit. Optio
+            enim, rerum voluptas non dolorem architecto libero, tempora laborum
+            fugiat, deleniti, iusto maxime rem similique laudantium nostrum ad
+            quod esse ullam modi illo?
+          </p>
+          <a href="post.html">Дэлгэрэнгүй унших</a>
+        </div>
+
+        <div class="post">
+          <img src="img/b2.jpg" alt="" />
+          <h3>Вэб хөгжүүлэлтийг хамгийн хялбар аргаар сурах</h3>
+          <p>
+            Лорем ипсум dolor sit amet consectetur adipisicing, elit. Optio
+            enim, rerum voluptas non dolorem architecto libero, tempora laborum
+            fugiat, deleniti, iusto maxime rem similique laudantium nostrum ad
+            quod esse ullam modi illo?
+          </p>
+          <a href="post.html">Дэлгэрэнгүй унших</a>
+        </div>
+
+        <div class="post">
+          <img src="img/b3.jpg" alt="" />
+          <h3>Вэб хөгжүүлэлтийг хамгийн хялбар аргаар сурах</h3>
+          <p>
+            Лорем ипсум dolor sit amet consectetur adipisicing, elit. Optio
+            enim, rerum voluptas non dolorem architecto libero, tempora laborum
+            fugiat, deleniti, iusto maxime rem similique laudantium nostrum ad
+            quod esse ullam modi illo?
+          </p>
+          <a href="post.html">Дэлгэрэнгүй унших</a>
+        </div>
+      </div>
+
+      <div class="cate">
+        <h2>Категориуд</h2>
+        <hr />
+        <a href="#">Вэб хөгжүүлэлт</a>
+        <hr />
+        <a href="#">Вэб дизайн</a>
+        <hr />
+        <a href="#">Апп хөгжүүлэлт</a>
+        <hr />
+        <a href="#">Фронтэнд вэб</a>
+        <hr />
+        <a href="#">Python программчлал</a>
+        <hr />
+        <a href="#">Javascript техникууд</a>
+      </div>
+    </section>
+    <!-- Блогийн агуулга дуусна -->
+
+   
+
+    <script>
+      // Менюг харуулах
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+
+      // Менюг хаах
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>
