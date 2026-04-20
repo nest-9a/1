@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flappy Bird Replica</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="flappy.css">
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+  <nav>
+    <img src="img/favicon.ico" class="logo" alt="">
+    <p>NEST Education IT School 2025</p>
+    <div class="navigation">
+      <ul>
+        <i id="menu-close" class="fas fa-times"></i>
+        <li><a href="index.html">Нүүр Хуудас</a></li>
+        <li><a href="buteel.html">Бүтээлийн танилцуулга</a></li>
+        <li><a href="course-inner.html">Хичээлийн тухай</a></li>
+        <li><a href="flappy.html" class="active">Flappy Bird</a></li>
+        <li><a href="contact.html">Холбоо барих</a></li>
+      </ul>
+      <img src="img/menu.png" id="menu-btn" alt="">
+    </div>
+  </nav>
+
+  <main class="game-page">
+    <h1>Flappy Bird Replica</h1>
+    <p>Click, tap, or press Space to fly. Avoid pipes and beat your high score.</p>
+    <div class="game-wrap">
+      <canvas id="gameCanvas" width="400" height="600" role="application" aria-label="Flappy Bird game canvas"></canvas>
+      <button id="restartBtn" type="button">Restart</button>
+    </div>
+  </main>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="flappy.js"></script>
+  <script>
+    $('#menu-btn').click(function () {
+      $('nav .navigation ul').addClass('active');
+    });
+
+    $('#menu-close').click(function () {
+      $('nav .navigation ul').removeClass('active');
+    });
+  </script>
+</body>
+</html>
