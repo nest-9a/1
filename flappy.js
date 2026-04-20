@@ -80,9 +80,9 @@ function update() {
 
   for (const pipe of pipes) {
     const inPipeX = bird.x + bird.radius > pipe.x && bird.x - bird.radius < pipe.x + pipeWidth;
-    const hitsTop = bird.y - bird.radius < pipe.topHeight;
-    const hitsBottom = bird.y + bird.radius > pipe.topHeight + pipeGap;
-    if (inPipeX && (hitsTop || hitsBottom)) {
+    const collidesWithTop = bird.y - bird.radius < pipe.topHeight;
+    const collidesWithBottom = bird.y + bird.radius > pipe.topHeight + pipeGap;
+    if (inPipeX && (collidesWithTop || collidesWithBottom)) {
       gameOver = true;
       break;
     }
