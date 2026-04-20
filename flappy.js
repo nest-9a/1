@@ -79,10 +79,10 @@ function update() {
   }
 
   for (const pipe of pipes) {
-    const inPipeX = bird.x + bird.radius > pipe.x && bird.x - bird.radius < pipe.x + pipeWidth;
+    const birdOverlapsPipeX = bird.x + bird.radius > pipe.x && bird.x - bird.radius < pipe.x + pipeWidth;
     const collidesWithTop = bird.y - bird.radius < pipe.topHeight;
     const collidesWithBottom = bird.y + bird.radius > pipe.topHeight + pipeGap;
-    if (inPipeX && (collidesWithTop || collidesWithBottom)) {
+    if (birdOverlapsPipeX && (collidesWithTop || collidesWithBottom)) {
       gameOver = true;
       break;
     }
